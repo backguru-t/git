@@ -3,6 +3,12 @@
 ##목차##
 - [원격 저장소 추가하기](#원격-저장소-추가)
 - [원격 저장소 삭제하기](#원격-저장소-삭제)
+- [Branch 생성](#Branch-생성)
+- [Branch 이동](#Branch-이동)
+- [Branch 생성과 이동](#Branch-생성과-이동)
+- [Branch 삭제](#Branch-삭제)
+- [Branch명 변경](#Branch명-변경)
+- [현재 Branch 확인](#현재-Branch-확인)
 
 ## 원격 저장소 추가
 
@@ -38,6 +44,46 @@ git push github master
 ```bash
 git remote remove github
 ```
+
+## Branch 생성
+아래와 같이 `git branch` 명령으로 새로운 Branch를 생성할 수 있다.
+```bash
+git branch <new-branch-name>
+```
+이 명령은 master Branch에서 *new-branch-name* 이라는 Branch를 생성한다.
+
+## Branch 이동
+`git checkout <branch-name>` 명령으로 Branch 이동이 가능하다. 예를 들어, master Branch에서 develop Branch로 이동할 경우에는 다음과 같다.
+```bash
+git checkout develop
+```
+
+## Branch 생성과 이동
+새로운 Branch 생성과 이동(checkout)을 한번에 할 수 있다. 예를 들어, develop Branch를 생성하면서 동시에 checkout하는 명령은 다음과 같다.
+
+```bash
+git checkout -b develop
+```
+
+## Branch 삭제
+`git branch -D` 명령으로 제거할 수 있다. 예를 들어, develop Branch 삭제는 다음과 같다.
+
+```bash
+git branch -D develop
+```
+
+## Branch명 변경
+다음과 같이 develop Branch 이름을 mydevelop으로 변경할 수 있다.
+
+```bash
+git branch -m develop mydevelop
+```
+
+## 현재 Branch 확인
+`git branch`  또는 `git branch -v` 명령으로 현재 Branch를 확인할 수 있다.
+
+
+
 
 **Reference**: https://git-scm.com/book/ko/v2
 
