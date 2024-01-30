@@ -9,6 +9,9 @@
 - [Branch 삭제](#branch-삭제)
 - [Branch명 변경](#branch명-변경)
 - [현재 Branch 확인](#현재-branch-확인)
+- [원격 저장소 branch 확인](#원격-저장소-branch-확인)
+- [로컬 및 원격 저장소 모든 branch 확인](#로컬-및-원격-저장소-모든-branch-확인)
+- [로컬 branch를 원격에 push하기](#로컬-branch를-원격에-push하기)
 
 ## 원격 저장소 추가
 
@@ -82,8 +85,21 @@ git branch -m develop mydevelop
 ## 현재 Branch 확인
 `git branch`  또는 `git branch -v` 명령으로 현재 Branch를 확인할 수 있다.
 
+## 원격 저장소 branch 확인
+```bash
+git branch -r
+```
 
+## 로컬 및 원격 저장소 모든 branch 확인
+```bash
+git branch -a
+```
 
+## 로컬 branch를 원격에 push하기
+로컬에 새로 생성한 develop branch를 원격에 push하는 방법은 아래와 같다.
+```bash
+git push origin develop
+```
 
 **Reference**: https://git-scm.com/book/ko/v2
 
