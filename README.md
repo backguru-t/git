@@ -3,12 +3,12 @@
 ## 목차
 - [원격 저장소 추가하기](#원격-저장소-추가)
 - [원격 저장소 삭제하기](#원격-저장소-삭제)
-- [Branch 생성](#Branch-생성)
-- [Branch 이동](#Branch-이동)
-- [Branch 생성과 이동](#Branch-생성과-이동)
-- [Branch 삭제](#Branch-삭제)
-- [Branch명 변경](#Branch명-변경)
-- [현재 Branch 확인](#현재-Branch-확인)
+- [Branch 생성](#branch-생성)
+- [Branch 이동](#branch-이동)
+- [Branch 생성과 이동](#branch-생성과-이동)
+- [Branch 삭제](#branch-삭제)
+- [Branch명 변경](#branch명-변경)
+- [현재 Branch 확인](#현재-branch-확인)
 
 ## 원격 저장소 추가
 
